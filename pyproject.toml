@@ -1,0 +1,59 @@
+[project]
+name = "calib-test"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+dependencies = [
+    "bokeh==3.8.2",
+    "cffi==2.0.0",
+    "clarabel==0.11.1",
+    "click==8.3.1",
+    "cloudpickle==3.1.2",
+    "cvxpy>=1.9.0",
+    "dask==2026.1.2",
+    "distributed==2026.1.2",
+    "fsspec==2026.1.0",
+    "h5py==3.15.1",
+    "importlib-metadata==8.7.1",
+    "jax>=0.10.0",
+    "jinja2==3.1.6",
+    "joblib==1.5.3",
+    "locket==1.0.0",
+    "lz4==4.4.5",
+    "matplotlib>=3.10.9",
+    "mosek==11.0.30",
+    "msgpack==1.1.2",
+    "narwhals==2.15.0",
+    "npeb",
+    "optax>=0.2.8",
+    "osqp>=1.1.1",
+    "pandas==2.3.3",
+    "partd==1.4.2",
+    "pyarrow==23.0.0",
+    "pycparser==2.23",
+    "pytz==2025.2",
+    "pyyaml==6.0.3",
+    "scikit-learn==1.8.0",
+    "scipy>=1.17.1",
+    "scs==3.2.9",
+    "sortedcontainers==2.4.0",
+    "submitit==1.5.4",
+    "tblib==3.2.2",
+    "threadpoolctl==3.6.0",
+    "toolz==1.1.0",
+    "tqdm>=4.67.3",
+    "tzdata==2025.3",
+    "urllib3==2.6.3",
+    "xyzservices==2025.11.0",
+    "zict==3.0.0",
+    "zipp==3.23.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "npeb",
+]
+
+[tool.uv.sources]
+npeb = { workspace = true, editable = true }
+
