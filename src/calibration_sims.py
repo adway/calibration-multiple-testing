@@ -167,7 +167,8 @@ if __name__ == "__main__":
     executor.update_parameters(
         slurm_job_name="calib",
         slurm_partition="standard",
-        slurm_account="stats_dept1",
+        # Set this to your cluster account before submitting jobs.
+        slurm_account="YOUR_SLURM_ACCOUNT",
         slurm_time=360,
         slurm_mem="16G",
         cpus_per_task=1,

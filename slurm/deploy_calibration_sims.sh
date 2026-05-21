@@ -2,7 +2,7 @@
 #SBATCH --job-name=calibration_splines
 #SBATCH --output=logs/%x-%j.out
 #SBATCH --error=logs/%x-%j.err
-#SBATCH --account=jonth1
+#SBATCH --account=YOUR_SLURM_ACCOUNT
 #SBATCH --partition=standard
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4G
