@@ -66,7 +66,7 @@ def fit_calibrator(name, pvals, labels=None, lam=0.5):
     if name == "p-value":
         cal = PValueCalibrator()
     elif name == "q-value":
-        cal = QValueCalibrator(lam=lam)
+        cal = QValueCalibrator()
     elif name == "g-lfdr":
         cal = GrenanderLfdrCalibrator()
     elif name == "l-lfdr":

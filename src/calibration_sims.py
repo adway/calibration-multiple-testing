@@ -1,5 +1,4 @@
 # run_calibration_submitit.py
-
 import os
 import sys
 import random
@@ -173,6 +172,9 @@ if __name__ == "__main__":
         slurm_mem="16G",
         cpus_per_task=1,
         tasks_per_node=1,
+        slurm_setup=[
+        f"export PYTHONPATH={SRC}:$PYTHONPATH",
+        f"cd {ROOT}"]
     )
 
     jobs = []
